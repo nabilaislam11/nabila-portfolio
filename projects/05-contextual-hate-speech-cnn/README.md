@@ -1,4 +1,4 @@
-# Context-Aware Hate Speech Detection with CNN
+# CNN-based Approaches for Contextual Hate Speech Detection
 
 A reconstructed machine-learning baseline inspired by the academic project title **CNN-based Approaches for Contextual Hate Speech Detection**.
 
@@ -20,3 +20,11 @@ A credible study should use author- or conversation-grouped splits to reduce lea
 
 ## Validation status
 Python syntax compilation passed. Training and inference have not been run because no dataset or trained model was supplied.
+
+## Original academic project: source and attribution
+
+The original CSE438 group submission includes a final paper and presentation titled “Unlocking the Potential of NLP: CNN based Approaches for Contextual Hate Speech Detection” and identifies Nabila Islam Borno as a group member. This repository's TensorFlow code is a later reference pipeline, not the original experiment.
+
+Original group materials: https://github.com/Khandaker-Atik/cse438/tree/main/submission6
+
+This was collaborative academic work. Specific individual implementation responsibilities are pending confirmation. The implementation and tests documented in this directory describe a later independently reconstructed reference build, not a copy of the historical submission. No original group files have been imported into this repository.

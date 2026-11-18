@@ -1,4 +1,4 @@
-# PyroWatch — Fire and Smoke Detection
+# Advanced Fire and Smoke Detection System
 
 A reconstructed image-analysis application inspired by the academic project title **Advanced Fire and Smoke Detection System**.
 
@@ -47,3 +47,11 @@ This is a newly authored reference implementation, not a verified reproduction o
 - Model accuracy, class mapping, threshold calibration, and real-world validation depend on the supplied model and dataset.
 - This is an experimental portfolio demonstrator, not a certified fire alarm or life-safety system.
 - Production use requires stronger file-content validation, access controls, retention policies, asynchronous inference, and deployment hardening.
+
+## Original academic project: source and attribution
+
+Original group archive includes a CSE360 project report and source archives for a computer-interfacing fire alarm/detection project. Hardware and implementation details are pending direct report review. The later YOLO adapter must not be described as part of the original project.
+
+Original group materials: https://github.com/Khandaker-Atik/CSE360
+
+This was collaborative academic work. Specific individual implementation responsibilities are pending confirmation. The implementation and tests documented in this directory describe a later independently reconstructed reference build, not a copy of the historical submission. No original group files have been imported into this repository.

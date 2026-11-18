@@ -1,4 +1,4 @@
-# Assembly Password Policy Checker
+# Password Checking tool using Assembly language for secure authentication
 
 A NASM x86-64 Linux reference program inspired by the academic project title **Password Checking Tool using Assembly Language for Secure Authentication**.
 
@@ -24,3 +24,9 @@ This is a reconstructed reference implementation, not a verified copy of the ori
 
 ## Validation status
 GitHub Actions successfully assembled and linked the NASM source on Ubuntu and passed 5 policy smoke tests (valid policy, missing uppercase, missing lowercase, short input, and empty input). Broader testing, terminal input hardening, and security review remain outside this educational demonstration.
+
+## Original academic project: source and attribution
+
+Original title documented in the pre-employment CV. No original source or submission has been verified; this directory holds a later NASM reference implementation.
+
+This was collaborative academic work. Specific individual implementation responsibilities are pending confirmation. The implementation and tests documented in this directory describe a later independently reconstructed reference build, not a copy of the historical submission. No original group files have been imported into this repository.

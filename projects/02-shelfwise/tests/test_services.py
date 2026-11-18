@@ -56,3 +56,20 @@ def test_sale_rejects_nonpositive_quantity(app):
     with app.app_context():
         with pytest.raises(ValueError, match="positive integer"):
             create_sale(user_id=user_id, customer_id=None, cart={book_id: 0})
+
+
+def test_authenticated_pages_render(app):
+    user_id, book_id = seed(app)
+    with app.app_context():
+        sale = create_sale(user_id=user_id, customer_id=None, cart={book_id: 1})
+        db.session.commit()
+        sale_id = sale.id
+    client = app.test_client()
+    response = client.post("/login", data={"username": "tester", "password": "test-password-long"},
+        follow_redirects=True)
+    assert response.status_code == 200
+    for path in ["/", "/books", "/books/new", f"/books/{book_id}/stock",
+                 "/customers", "/customers/new", "/sales/new", "/sales",
+                 f"/sales/{sale_id}"]:
+        response = client.get(path)
+        assert response.status_code == 200, (path, response.get_data(as_text=True))

@@ -48,6 +48,5 @@ This is a newly written reference implementation, not a verified reproduction of
 
 Original group codebase: PHP / Laravel 8; repository includes school administration controllers, models and routes. Check the committed `.env` and any student records before reusing or publishing files.
 
-Original group materials: https://github.com/Khandaker-Atik/School-Management
 
 This was collaborative academic work. Specific individual implementation responsibilities are pending confirmation. The implementation and tests documented in this directory describe a later independently reconstructed reference build, not a copy of the historical submission. No original group files have been imported into this repository.

@@ -30,7 +30,7 @@ Open `http://127.0.0.1:5000`. Use a unique administrator password. Do not deploy
 
 ## Validation status
 
-Python syntax compilation and static checks for CSRF-protected POST forms passed in the local reconstruction environment. Runtime, database integration, authorization-boundary, and browser tests have not yet been completed. The automated test suite is included under `tests/`.
+The latest GitHub Actions run passed 5 automated tests, including login/dashboard checks, selected administration-page rendering, and grade calculation. Python compilation and static CSRF form checks also passed. Full browser workflows, database migration behaviour, and deeper authorization-boundary testing remain outstanding. The suite is under `tests/`.
 
 ## Scope and provenance
 

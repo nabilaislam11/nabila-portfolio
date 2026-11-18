@@ -1,0 +1,133 @@
+name: Project validation
+
+on:
+  push:
+    branches:
+      - portfolio-projects-development
+    paths:
+      - "projects/01-campusdesk/**"
+      - "projects/02-shelfwise/**"
+      - "projects/03-pyrowatch/**"
+      - "projects/04-assembly-password-checker/**"
+      - "projects/05-contextual-hate-speech-cnn/**"
+      - "index.html"
+      - "Index.html"
+      - "style.css"
+      - "script.js"
+      - "projects/project-detail.css"
+      - "scripts/**"
+      - ".github/workflows/project-validation.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "projects/01-campusdesk/**"
+      - "projects/02-shelfwise/**"
+      - "projects/03-pyrowatch/**"
+      - "projects/04-assembly-password-checker/**"
+      - "projects/05-contextual-hate-speech-cnn/**"
+      - "index.html"
+      - "Index.html"
+      - "style.css"
+      - "script.js"
+      - "projects/project-detail.css"
+      - "scripts/**"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: CampusDesk
+            directory: projects/01-campusdesk
+            command: python -m unittest discover -s tests -v
+          - name: ShelfWise
+            directory: projects/02-shelfwise
+            command: python -m pytest -q
+          - name: PyroWatch
+            directory: projects/03-pyrowatch
+            command: python -m pytest -q
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: ${{ matrix.directory }}/requirements.txt
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.directory }}
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt pytest
+
+      - name: Compile Python source
+        working-directory: ${{ matrix.directory }}
+        run: python -m compileall -q .
+
+      - name: Run automated tests
+        working-directory: ${{ matrix.directory }}
+        run: ${{ matrix.command }}
+
+  assembly:
+    name: Assembly password checker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install NASM and linker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nasm binutils
+
+      - name: Assemble and link
+        working-directory: projects/04-assembly-password-checker
+        run: |
+          nasm -f elf64 src/password_checker.asm -o password_checker.o
+          ld password_checker.o -o password_checker
+
+      - name: Run policy smoke tests
+        working-directory: projects/04-assembly-password-checker
+        run: bash tests/test.sh
+
+  cnn-source-check:
+    name: Contextual CNN source compilation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile training and inference scripts
+        working-directory: projects/05-contextual-hate-speech-cnn
+        run: python -m compileall -q src
+
+  portfolio-links:
+    name: Portfolio page and link validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate local portfolio links
+        run: python scripts/check_portfolio_links.py

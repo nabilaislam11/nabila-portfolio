@@ -8,6 +8,8 @@ on:
       - "projects/01-campusdesk/**"
       - "projects/02-shelfwise/**"
       - "projects/03-pyrowatch/**"
+      - "projects/04-assembly-password-checker/**"
+      - "projects/05-contextual-hate-speech-cnn/**"
       - ".github/workflows/project-validation.yml"
   pull_request:
     branches:
@@ -16,6 +18,8 @@ on:
       - "projects/01-campusdesk/**"
       - "projects/02-shelfwise/**"
       - "projects/03-pyrowatch/**"
+      - "projects/04-assembly-password-checker/**"
+      - "projects/05-contextual-hate-speech-cnn/**"
 
 permissions:
   contents: read
@@ -84,3 +88,19 @@ jobs:
       - name: Run policy smoke tests
         working-directory: projects/04-assembly-password-checker
         run: bash tests/test.sh
+
+  cnn-source-check:
+    name: Contextual CNN source compilation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile training and inference scripts
+        working-directory: projects/05-contextual-hate-speech-cnn
+        run: python -m compileall -q src

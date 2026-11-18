@@ -30,7 +30,7 @@ Open `http://127.0.0.1:5000`. The database tables are created by the application
 
 ## Validation status
 
-Service-level tests are included under `tests/`, including Decimal calculations, stock reduction, and insufficient-stock rejection. Automated test execution and full runtime/browser validation have not yet been completed in the build environment.
+The latest GitHub Actions run passed 6 tests under `tests/`, covering Decimal calculations, discount validation, stock reduction, insufficient-stock rejection, and authenticated route/template rendering. Full browser validation and production-database concurrency testing remain outstanding.
 
 ## Scope and provenance
 

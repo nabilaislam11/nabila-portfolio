@@ -20,9 +20,9 @@ My interests include software engineering, machine learning, computer vision, cl
 
 ## Project integrity
 
-Some original academic source files and supporting documents are unavailable. The project folders therefore include newly reconstructed reference implementations inspired by the original project topics. They are not presented as exact copies of the historical submissions. Each case study states its scope, provenance, validation status, and limitations.
+Original collaborative repositories have now been located for the school-management, bookshop-management, fire-detection, and contextual hate-speech projects. The project folders contain separately authored reconstructed reference implementations inspired by those original topics. They are not presented as exact copies of the historical submissions. Each case study states its scope, provenance, validation status, and limitations.
 
-The Business Intelligence, AI, and Big Data Analytics study is pending original materials. No datasets, results, or conclusions have been fabricated.
+The Business Intelligence, AI, and Big Data Analytics study is a pending, unverified placeholder, not a completed documented project. No datasets, results, or conclusions have been fabricated.
 
 ## Run the website locally
 

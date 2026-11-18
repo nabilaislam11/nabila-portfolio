@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - portfolio-projects-development
+      - restore-original-academic-project-titles
     paths:
       - "projects/01-campusdesk/**"
       - "projects/02-shelfwise/**"
@@ -12,6 +13,8 @@ on:
       - "projects/04-assembly-password-checker/**"
       - "projects/05-contextual-hate-speech-cnn/**"
       - "index.html"
+      - "README.md"
+      - "projects/README.md"
       - "Index.html"
       - "style.css"
       - "script.js"
@@ -28,6 +31,8 @@ on:
       - "projects/04-assembly-password-checker/**"
       - "projects/05-contextual-hate-speech-cnn/**"
       - "index.html"
+      - "README.md"
+      - "projects/README.md"
       - "Index.html"
       - "style.css"
       - "script.js"

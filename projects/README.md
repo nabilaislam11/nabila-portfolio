@@ -1,16 +1,18 @@
-# Academic Project Reconstructions
+# Academic Project Case Studies
 
-This directory contains carefully documented portfolio reconstructions inspired by six academic project titles from my undergraduate work.
+The portfolio homepage links to six individual project case studies. These pages distinguish original academic project topics from newly reconstructed reference implementations.
 
-**Important distinction:** these are new reference implementations and technical documentation created for portfolio presentation. They are not represented as exact copies of the original university submissions. Historical project participation and newly reconstructed implementation details are described separately.
+| Project | Case study | Current status |
+|---|---|---|
+| CampusDesk — School Management System | [Open case study](01-campusdesk/index.html) | Reconstructed Flask reference build; runtime validation pending |
+| ShelfWise — Book Shop Management System | [Open case study](02-shelfwise/index.html) | Reconstructed Flask reference build; runtime validation pending |
+| PyroWatch — Fire and Smoke Detection | [Open case study](03-pyrowatch/index.html) | Optional model integration; no weights supplied |
+| Assembly Password Policy Checker | [Open case study](04-assembly-password-checker/index.html) | NASM source; assembly and runtime validation pending |
+| Context-Aware Hate Speech Detection with CNN | [Open case study](05-contextual-hate-speech-cnn/index.html) | Training pipeline; no dataset or trained model supplied |
+| Business Intelligence, AI and Big Data Analytics | [Open case study](06-bi-ai-big-data/index.html) | Awaiting original materials and data |
 
-## Projects
+## Provenance and accuracy
 
-1. [CampusDesk — School Management System](01-campusdesk/README.md)
-2. [ShelfWise — Book Shop Management System](02-shelfwise/README.md)
-3. [PyroWatch — Fire and Smoke Detection](03-pyrowatch/README.md)
-4. [Assembly Password Policy Checker](04-assembly-password-checker/README.md)
-5. [Context-Aware Hate Speech Detection with CNN](05-contextual-hate-speech-cnn/README.md)
-6. [Business Intelligence, AI and Big Data Analytics](06-bi-ai-big-data/README.md) — pending original materials/data.
+The six topics reflect academic projects in which I participated. Where original code, reports, or other evidence could not be recovered, the public repository describes a new reference implementation. Newly written code and features must not be mistaken for the exact historical submission.
 
-Each project README identifies its scope, implementation status, validation limits, and future work. No experimental results or original implementation details are invented.
+Each README and case study identifies its technical scope, setup direction, current validation status, and known limitations. No experimental scores, datasets, or research findings are invented.

@@ -1,4 +1,4 @@
-# CampusDesk — School Management System
+# Advanced School Management System
 
 A reconstructed web application inspired by the academic project title **Advanced School Management System**.
 
@@ -43,3 +43,11 @@ This is a newly written reference implementation, not a verified reproduction of
 - Audit logging, database migrations, and production deployment hardening are not implemented.
 - The dashboard's outstanding invoice figure is gross unpaid/partially paid invoice value and does not subtract partial payments.
 - Review SQLite foreign-key enforcement and deletion behaviour before relying on it for real records.
+
+## Original academic project: source and attribution
+
+Original group codebase: PHP / Laravel 8; repository includes school administration controllers, models and routes. Check the committed `.env` and any student records before reusing or publishing files.
+
+Original group materials: https://github.com/Khandaker-Atik/School-Management
+
+This was collaborative academic work. Specific individual implementation responsibilities are pending confirmation. The implementation and tests documented in this directory describe a later independently reconstructed reference build, not a copy of the historical submission. No original group files have been imported into this repository.

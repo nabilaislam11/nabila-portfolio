@@ -62,3 +62,25 @@ jobs:
       - name: Run automated tests
         working-directory: ${{ matrix.directory }}
         run: ${{ matrix.command }}
+
+  assembly:
+    name: Assembly password checker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install NASM and linker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nasm binutils
+
+      - name: Assemble and link
+        working-directory: projects/04-assembly-password-checker
+        run: |
+          nasm -f elf64 src/password_checker.asm -o password_checker.o
+          ld password_checker.o -o password_checker
+
+      - name: Run policy smoke tests
+        working-directory: projects/04-assembly-password-checker
+        run: bash tests/test.sh

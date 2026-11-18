@@ -46,6 +46,5 @@ This is a new portfolio implementation, not a verified copy of the original acad
 
 Original group codebase: PHP / MySQL, including database/book_shop_db.sql and administrative ordering/inventory modules. The original README contains example login credentials; these must not be reused as production secrets.
 
-Original group materials: https://github.com/Khandaker-Atik/Book_shop_management
 
 This was collaborative academic work. Specific individual implementation responsibilities are pending confirmation. The implementation and tests documented in this directory describe a later independently reconstructed reference build, not a copy of the historical submission. No original group files have been imported into this repository.

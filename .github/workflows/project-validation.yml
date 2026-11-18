@@ -10,6 +10,12 @@ on:
       - "projects/03-pyrowatch/**"
       - "projects/04-assembly-password-checker/**"
       - "projects/05-contextual-hate-speech-cnn/**"
+      - "index.html"
+      - "Index.html"
+      - "style.css"
+      - "script.js"
+      - "projects/project-detail.css"
+      - "scripts/**"
       - ".github/workflows/project-validation.yml"
   pull_request:
     branches:
@@ -20,6 +26,12 @@ on:
       - "projects/03-pyrowatch/**"
       - "projects/04-assembly-password-checker/**"
       - "projects/05-contextual-hate-speech-cnn/**"
+      - "index.html"
+      - "Index.html"
+      - "style.css"
+      - "script.js"
+      - "projects/project-detail.css"
+      - "scripts/**"
 
 permissions:
   contents: read

@@ -1,6 +1,6 @@
 from pathlib import Path
 from uuid import uuid4
-from flask import Blueprint, render_template, request, redirect, url_for, flash, current_app, send_from_directory
+from flask import Blueprint, render_template, request, redirect, url_for, flash, current_app, send_from_directory, abort
 from flask_login import login_required, current_user
 from werkzeug.utils import secure_filename
 from app import db
@@ -15,9 +15,9 @@ def _extension(filename):
 @main_bp.get("/")
 @login_required
 def dashboard():
-    total = DetectionRecord.query.count()
-    completed = DetectionRecord.query.filter_by(status="completed").count()
-    recent = DetectionRecord.query.order_by(DetectionRecord.created_at.desc()).limit(8).all()
+    total = DetectionRecord.query.filter_by(created_by=current_user.id).count()
+    completed = DetectionRecord.query.filter_by(status="completed", created_by=current_user.id).count()
+    recent = DetectionRecord.query.filter_by(created_by=current_user.id).order_by(DetectionRecord.created_at.desc()).limit(8).all()
     model_path = current_app.config.get("MODEL_PATH", "")
     ready = bool(model_path and Path(model_path).is_file())
     return render_template("dashboard.html", total=total, completed=completed,
@@ -82,9 +82,14 @@ def analyze():
 @login_required
 def record_detail(record_id):
     record = db.get_or_404(DetectionRecord, record_id)
+    if record.created_by != current_user.id:
+        abort(404)
     return render_template("record_detail.html", record=record)
 
 @main_bp.get("/media/<path:filename>")
 @login_required
 def media(filename):
+    record = DetectionRecord.query.filter_by(result_filename=filename, created_by=current_user.id).first()
+    if record is None:
+        abort(404)
     return send_from_directory(current_app.config["UPLOAD_FOLDER"], filename, as_attachment=False)

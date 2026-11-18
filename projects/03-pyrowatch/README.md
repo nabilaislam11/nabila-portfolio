@@ -35,7 +35,7 @@ The model must be trained for compatible fire/smoke classes. No model weights ar
 
 ## Validation status
 
-The latest GitHub Actions run passed 3 tests under `tests/`, covering login/dashboard rendering, unsupported-file rejection, and analysis/record-detail page rendering. Actual model inference has not been run because no verified weights or dataset were supplied. No detection examples or accuracy results are included or claimed.
+An earlier GitHub Actions run passed 3 tests under `tests/`. Two ownership/access-control regression tests have now been added and require a fresh successful CI run. Actual model inference has not been run because no verified weights or dataset were supplied. No detection examples or accuracy results are included or claimed.
 
 ## Scope and provenance
 
@@ -46,7 +46,7 @@ This is a newly authored reference implementation, not a verified reproduction o
 - Video inference is not implemented; video uploads are only recorded as not processed.
 - Model accuracy, class mapping, threshold calibration, and real-world validation depend on the supplied model and dataset.
 - This is an experimental portfolio demonstrator, not a certified fire alarm or life-safety system.
-- Production use requires stronger file-content validation, access controls, retention policies, asynchronous inference, and deployment hardening.
+- The reference build now restricts record details, dashboard records and annotated output to the record owner. Production use still requires file-content validation, retention policies, asynchronous inference, deployment hardening, and additional security review.
 
 ## Original academic project: source and attribution
 

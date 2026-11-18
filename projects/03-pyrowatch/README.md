@@ -35,7 +35,7 @@ The model must be trained for compatible fire/smoke classes. No model weights ar
 
 ## Validation status
 
-Static Python and form checks were performed. Runtime application testing and real model inference have not been completed. No trained weights, detection examples, or accuracy results are included or claimed.
+The latest GitHub Actions run passed 3 tests under `tests/`, covering login/dashboard rendering, unsupported-file rejection, and analysis/record-detail page rendering. Actual model inference has not been run because no verified weights or dataset were supplied. No detection examples or accuracy results are included or claimed.
 
 ## Scope and provenance
 

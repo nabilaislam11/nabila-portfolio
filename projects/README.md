@@ -4,11 +4,11 @@ This index distinguishes original collaborative academic projects from later rec
 
 | Original academic project | Case study | Original evidence | Reference implementation status |
 |---|---|---|---|
-| Advanced School Management System | [Open case study](01-campusdesk/index.html) | [Group Laravel/PHP repository](https://github.com/Khandaker-Atik/School-Management) | Separate Flask build; automated tests previously reported passing |
-| Advanced Book Shop Management System | [Open case study](02-shelfwise/index.html) | [Group PHP/MySQL repository](https://github.com/Khandaker-Atik/Book_shop_management) | Separate Flask build; automated tests previously reported passing |
-| Advanced Fire and Smoke Detection System | [Open case study](03-pyrowatch/index.html) | [CSE360 group report and code archives](https://github.com/Khandaker-Atik/CSE360) | Separate Flask/optional YOLO adapter; no verified model weights |
+| Advanced School Management System | [Open case study](01-campusdesk/index.html) | Group Laravel/PHP repository | Separate Flask build; automated tests previously reported passing |
+| Advanced Book Shop Management System | [Open case study](02-shelfwise/index.html) | Group PHP/MySQL repository | Separate Flask build; automated tests previously reported passing |
+| Advanced Fire and Smoke Detection System | [Open case study](03-pyrowatch/index.html) | CSE360 group report and code archives | Separate Flask/optional YOLO adapter; no verified model weights |
 | Password Checking tool using Assembly language for secure authentication | [Open case study](04-assembly-password-checker/index.html) | Title in historical CV; original code not yet verified | Separate NASM policy checker; assembly smoke tests previously reported passing |
-| CNN-based Approaches for Contextual Hate Speech Detection | [Open case study](05-contextual-hate-speech-cnn/index.html) | [CSE438 group research submission](https://github.com/Khandaker-Atik/cse438) | Separate TensorFlow pipeline; syntax checked, training not verified |
+| CNN-based Approaches for Contextual Hate Speech Detection | [Open case study](05-contextual-hate-speech-cnn/index.html) | CSE438 group research submission | Separate TensorFlow pipeline; syntax checked, training not verified |
 
 ## Additional study pending verification
 

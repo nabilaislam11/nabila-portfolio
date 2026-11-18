@@ -3,6 +3,7 @@ name: Project validation
 on:
   push:
     branches:
+      - main
       - portfolio-projects-development
     paths:
       - "projects/01-campusdesk/**"

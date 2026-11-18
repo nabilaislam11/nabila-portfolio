@@ -1,7 +1,7 @@
 from datetime import date
 from decimal import Decimal, InvalidOperation
-from flask import Blueprint, render_template, request, redirect, url_for, flash
-from flask_login import login_required
+from flask import Blueprint, render_template, request, redirect, url_for, flash, abort
+from flask_login import login_required, current_user
 from app import db
 from app.models import Student, SchoolClass, Subject, Attendance, Exam, Result, Teacher
 from app.utils import roles_required, calculate_grade
@@ -78,11 +78,13 @@ def attendance():
 
 @bp.route("/exams", methods=["GET", "POST"])
 @login_required
-@roles_required("admin")
+@roles_required("admin", "teacher")
 def exams():
     classes = SchoolClass.query.order_by(SchoolClass.class_name).all()
     subjects = Subject.query.order_by(Subject.subject_name).all()
     if request.method == "POST":
+        if current_user.role != "admin":
+            abort(403)
         try:
             maximum = Decimal(request.form.get("maximum_marks", "0"))
             exam_date = date.fromisoformat(request.form.get("exam_date", ""))

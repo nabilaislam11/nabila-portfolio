@@ -23,4 +23,4 @@ Use dummy test strings only. Terminal echo is enabled.
 This is a reconstructed reference implementation, not a verified copy of the original university source. It is a policy checker, not a complete authentication system; it does not store credentials or perform password hashing.
 
 ## Validation status
-NASM was unavailable in the build environment, so assembly, linking and runtime execution have not yet been verified.
+GitHub Actions successfully assembled and linked the NASM source on Ubuntu and passed 5 policy smoke tests (valid policy, missing uppercase, missing lowercase, short input, and empty input). Broader testing, terminal input hardening, and security review remain outside this educational demonstration.

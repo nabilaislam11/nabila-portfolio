@@ -104,3 +104,18 @@ jobs:
       - name: Compile training and inference scripts
         working-directory: projects/05-contextual-hate-speech-cnn
         run: python -m compileall -q src
+
+  portfolio-links:
+    name: Portfolio page and link validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate local portfolio links
+        run: python scripts/check_portfolio_links.py

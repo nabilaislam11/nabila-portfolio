@@ -18,11 +18,9 @@ My interests include software engineering, machine learning, computer vision, cl
 - [Academic project case studies](projects/README.md)
 - [Professional profile](https://www.linkedin.com/in/nabila-islam-borno-6b4873209)
 
-## Project integrity
+## Academic projects
 
-Some original academic source files and supporting documents are unavailable. The project folders therefore include newly reconstructed reference implementations inspired by the original project topics. They are not presented as exact copies of the historical submissions. Each case study states its scope, provenance, validation status, and limitations.
-
-The Business Intelligence, AI, and Big Data Analytics study is pending original materials. No datasets, results, or conclusions have been fabricated.
+Explore my [academic project case studies](projects/README.md), covering software engineering, applied machine learning, and related coursework. Each project page describes its objectives, technologies, and available implementation materials.
 
 ## Run the website locally
 

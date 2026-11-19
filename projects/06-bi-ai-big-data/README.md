@@ -1,17 +1,18 @@
-# Business Intelligence, Artificial Intelligence and Big Data Analytics
+# Business Intelligence, Artificial Intelligence & Big Data Analytics
 
-**Status: pending original materials and data.**
+An academic comparative study topic exploring how business intelligence and artificial intelligence contribute to data-driven decision-making in big-data environments.
 
-This project is reserved for the academic work titled **A Comparative Study of Business Intelligence and Artificial Intelligence with Big Data Analytics**.
+## Overview
 
-I will not invent its research questions, datasets, methodology, comparative findings, charts or conclusions. The project will be reconstructed only after the original data, report, slides, notes or other available materials are reviewed.
+Business intelligence commonly supports reporting, dashboards, querying, and analysis of organizational information. Artificial intelligence applies statistical learning and computational models to tasks such as prediction, classification, and pattern discovery.
 
-## Planned documentation
-- Research question and scope
-- BI and AI comparison framework
-- Big-data analytics context
-- Data sources and methodology
-- Reproducible analysis, if data is available
-- Findings, limitations and references
+Big-data analytics brings together methods and tools for working with data at larger scale or greater variety. Comparing BI and AI offers a useful perspective on analytical methods and how they complement each other in information systems.
 
-The final content will distinguish historical academic work from any newly added analysis.
+## Key themes
+
+- Business intelligence and decision-support systems
+- Artificial intelligence and predictive analysis
+- Big-data processing and analytical workflows
+- Comparative applications in organizational information systems
+
+This overview documents the project's academic topic without assigning experimental results or quantitative findings.

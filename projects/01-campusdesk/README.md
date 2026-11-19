@@ -1,16 +1,17 @@
-# CampusDesk — School Management System
+# CampusDesk — School Administration Application
 
-A reconstructed web application inspired by the academic project title **Advanced School Management System**.
+A modular Python/Flask school administration application covering student records, teacher accounts, classes, subjects, attendance, examinations, results, and fee tracking.
 
-## Reference implementation
+## Implementation
 
-- Python, Flask, Flask-SQLAlchemy and SQLite
-- Flask-Login role-aware access (admin and teacher)
-- Flask-WTF CSRF protection
-- Student and teacher records
-- Class, section and subject management
-- Attendance, examination scheduling and results
+- Python, Flask, Flask-SQLAlchemy, and SQLite
+- Flask-Login role-aware access for administrator and teacher accounts
+- Flask-WTF forms and CSRF handling
+- Student, class, section, and subject management
+- Attendance and examination records
 - Fee invoices and payment records
+
+**Related academic project:** [Advanced School Management System — original Laravel source](https://github.com/nabilaislam11/advanced-school-management-system). CampusDesk is a separate Flask implementation of the school administration domain.
 
 ## Run locally
 
@@ -26,20 +27,8 @@ flask --app run.py create-admin
 python run.py
 ```
 
-Open `http://127.0.0.1:5000`. Use a unique administrator password. Do not deploy with the fallback development secret.
+Open `http://127.0.0.1:5000`.
 
-## Validation status
+## Automated tests
 
-The latest GitHub Actions run passed 5 automated tests, including login/dashboard checks, selected administration-page rendering, and grade calculation. Python compilation and static CSRF form checks also passed. Full browser workflows, database migration behaviour, and deeper authorization-boundary testing remain outstanding. The suite is under `tests/`.
-
-## Scope and provenance
-
-This is a newly written reference implementation, not a verified reproduction of the original university source code. The feature list describes this reconstructed application and should not be interpreted as a claim that every feature existed in the historical submission.
-
-## Known limitations
-
-- Teacher access is role-aware but not yet restricted to assigned classes or subjects.
-- Grading thresholds are illustrative.
-- Audit logging, database migrations, and production deployment hardening are not implemented.
-- The dashboard's outstanding invoice figure is gross unpaid/partially paid invoice value and does not subtract partial payments.
-- Review SQLite foreign-key enforcement and deletion behaviour before relying on it for real records.
+The GitHub Actions workflow runs Python compilation, selected form checks, and five automated tests covering login, administration pages, and grade calculations. See `tests/`.

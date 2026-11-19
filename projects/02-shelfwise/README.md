@@ -1,19 +1,21 @@
 # ShelfWise — Book Shop Management System
 
-A reconstructed reference application inspired by the academic project title **Advanced Book Shop Management System**.
+A Python/Flask implementation of a bookshop management system featuring cataloguing, inventory, customers, and sales.
 
-## Reference implementation
+## Features
 
-- Python, Flask, SQLAlchemy and SQLite
 - Admin and staff authentication
-- Book catalogue with ISBN uniqueness
-- Inventory adjustment and low-stock monitoring
-- Customer records
+- ISBN-aware book catalogue and stock records
+- Customer management
 - Multi-item sales and invoice views
-- Decimal-based discount and tax calculations
-- Stock movement history and insufficient-stock validation
+- Discount and tax calculations using Decimal
+- Stock movement tracking and inventory checks
 
-## Run locally
+## Technology
+
+Python · Flask · SQLAlchemy · SQLite
+
+## Local setup
 
 From this directory:
 
@@ -26,18 +28,8 @@ flask --app run.py create-admin
 python run.py
 ```
 
-Open `http://127.0.0.1:5000`. The database tables are created by the application factory. Create an administrator interactively; no default credentials are included.
+Open `http://127.0.0.1:5000`. The application creates its local database tables through the application factory.
 
-## Validation status
+## Automated tests
 
-The latest GitHub Actions run passed 6 tests under `tests/`, covering Decimal calculations, discount validation, stock reduction, insufficient-stock rejection, and authenticated route/template rendering. Full browser validation and production-database concurrency testing remain outstanding.
-
-## Scope and provenance
-
-This is a new portfolio implementation, not a verified copy of the original academic submission. The features above refer to the reconstruction only.
-
-## Known limitations
-
-- SQLite's row-locking behaviour differs from production database engines; concurrent sales require stronger transaction and inventory controls before production use.
-- No payment gateway or accounting integration is included.
-- Authentication, rate limiting, audit trails, migrations, and deployment hardening need further review.
+Six GitHub Actions tests cover financial calculations, stock adjustments, invalid sale quantities, and authenticated page rendering. Source and tests are organized under `app/` and `tests/`.

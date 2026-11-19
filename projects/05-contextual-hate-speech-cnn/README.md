@@ -1,22 +1,31 @@
-# Context-Aware Hate Speech Detection with CNN
+# Context-Aware Hate Speech Detection — CNN Pipeline
 
-A reconstructed machine-learning baseline inspired by the academic project title **CNN-based Approaches for Contextual Hate Speech Detection**.
+A Python/TensorFlow implementation exploring context-aware text classification using one-dimensional convolutional neural networks.
 
-## Reference pipeline
-- CSV input with post text, conversational context and label
-- Context-marked text concatenation
-- Tokenization and sequence padding
-- Embedding layer
-- Parallel 1D CNN branches with kernel sizes 2, 3 and 4
+**Related academic research:** [Contextual Hate Speech Detection with CNNs](https://github.com/nabilaislam11/contextual-hate-speech-detection-cnn), including the final research paper, methodology, and reported results.
+
+## Pipeline
+
+- CSV input for post text, conversational context, and category
+- Context markers, tokenization, and sequence padding
+- Embedding layer and parallel Conv1D branches
 - Dropout and softmax classification
-- Early stopping, classification report and confusion matrix export
+- Training script with early stopping and evaluation exports
 - Separate prediction script
 
-## Scope and provenance
-This is a newly authored reference pipeline, not a verified reproduction of the original academic implementation. No dataset, model weights, benchmark scores or experimental findings are fabricated or included.
+## Technology
 
-## Evaluation cautions
-A credible study should use author- or conversation-grouped splits to reduce leakage, report macro-F1 and per-class metrics, compare suitable baselines, and inspect context-sensitive errors. Predictions require human review and should not be used as the sole basis for punitive decisions.
+Python · TensorFlow/Keras · NumPy · Pandas · scikit-learn
 
-## Validation status
-Python syntax compilation passed. Training and inference have not been run because no dataset or trained model was supplied.
+## Source
+
+- `src/train.py` — model definition, training, and evaluation workflow
+- `src/predict.py` — inference from saved model artifacts
+- `requirements.txt` — dependencies
+- `data/README.md` — input format
+
+This pipeline is a separate implementation alongside the academic research publication; paper results are documented in the research repository.
+
+## Verification
+
+The GitHub Actions workflow checks Python source compilation. Training follows the input schema described in `data/README.md`.

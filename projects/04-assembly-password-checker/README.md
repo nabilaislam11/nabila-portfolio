@@ -1,26 +1,26 @@
 # Assembly Password Policy Checker
 
-A NASM x86-64 Linux reference program inspired by the academic project title **Password Checking Tool using Assembly Language for Secure Authentication**.
+A command-line password-policy evaluation exercise implemented with NASM on x86-64 Linux.
 
-## Implemented policy checks
-- Minimum length of 12 characters
-- Uppercase ASCII letter
-- Lowercase ASCII letter
-- Numeric digit
-- Non-alphanumeric ASCII character
-- Per-rule failure messages and process exit statuses
+## Features
 
-## Build
+- Checks minimum length of 12 characters
+- Detects uppercase and lowercase ASCII letters
+- Detects numeric and non-alphanumeric characters
+- Reports failed checks and program exit status
+
+The program evaluates policy rules on input strings; it is not an account authentication or password storage system.
+
+## Build and run
+
 ```bash
 nasm -f elf64 src/password_checker.asm -o password_checker.o
 ld password_checker.o -o password_checker
 ./password_checker
 ```
 
-Use dummy test strings only. Terminal echo is enabled.
+Use sample input rather than real credentials.
 
-## Scope and provenance
-This is a reconstructed reference implementation, not a verified copy of the original university source. It is a policy checker, not a complete authentication system; it does not store credentials or perform password hashing.
+## Tests
 
-## Validation status
-GitHub Actions successfully assembled and linked the NASM source on Ubuntu and passed 5 policy smoke tests (valid policy, missing uppercase, missing lowercase, short input, and empty input). Broader testing, terminal input hardening, and security review remain outside this educational demonstration.
+The GitHub Actions workflow assembles and links the program and runs five policy smoke tests for accepted and rejected inputs. Test cases are in `tests/test.sh`.

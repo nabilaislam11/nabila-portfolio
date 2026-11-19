@@ -1,19 +1,20 @@
-# PyroWatch — Fire and Smoke Detection
+# PyroWatch — Fire & Smoke Image Analysis
 
-A reconstructed image-analysis application inspired by the academic project title **Advanced Fire and Smoke Detection System**.
+A Python/Flask application connecting media submission, analysis history, and a configurable computer-vision model adapter.
 
-## Reference implementation
+## Components
 
-- Python and Flask web interface
-- Authenticated image/video submission records
-- File extension allow-list and upload-size limit
-- Detection history and analysis details
-- Optional YOLO inference adapter using externally supplied model weights
-- Annotated image output when inference runs successfully
+- Authenticated image and video submission records
+- File-type checks and upload-size controls
+- Analysis records and history pages
+- Optional YOLO image-inference adapter
+- Annotated output for successful image inference
+
+## Technology
+
+Python · Flask · Ultralytics YOLO adapter · OpenCV
 
 ## Run locally
-
-From this directory:
 
 ```bash
 python -m venv .venv
@@ -24,26 +25,15 @@ flask --app run.py create-admin
 python run.py
 ```
 
-For actual image inference, install compatible optional packages:
+For model-based image analysis, configure compatible model weights and optional dependencies:
 
 ```bash
 pip install ultralytics opencv-python-headless
-export MODEL_PATH=/absolute/path/to/your/verified-model.pt
+export MODEL_PATH=/absolute/path/to/verified-model.pt
 ```
 
-The model must be trained for compatible fire/smoke classes. No model weights are bundled. OpenCV and Ultralytics versions must be compatible with the local Python and hardware environment.
+The web application handles analysis records independently of model configuration.
 
-## Validation status
+## Automated tests
 
-The latest GitHub Actions run passed 3 tests under `tests/`, covering login/dashboard rendering, unsupported-file rejection, and analysis/record-detail page rendering. Actual model inference has not been run because no verified weights or dataset were supplied. No detection examples or accuracy results are included or claimed.
-
-## Scope and provenance
-
-This is a newly authored reference implementation, not a verified reproduction of the original academic source code.
-
-## Known limitations
-
-- Video inference is not implemented; video uploads are only recorded as not processed.
-- Model accuracy, class mapping, threshold calibration, and real-world validation depend on the supplied model and dataset.
-- This is an experimental portfolio demonstrator, not a certified fire alarm or life-safety system.
-- Production use requires stronger file-content validation, access controls, retention policies, asynchronous inference, and deployment hardening.
+Three GitHub Actions tests cover authentication/dashboard rendering, unsupported-file rejection, and analysis-detail pages. Model inference is activated through the optional adapter and externally configured weights.

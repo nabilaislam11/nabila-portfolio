@@ -1,18 +1,24 @@
-# Academic Project Case Studies
+# Selected Academic Projects
 
-The portfolio homepage links to six individual project case studies. These pages distinguish original academic project topics from newly reconstructed reference implementations.
+Academic research, source-code projects, and technical implementations are organized below.
 
-| Project | Case study | Current status |
-|---|---|---|
-| CampusDesk — School Management System | [Open case study](01-campusdesk/index.html) | Reconstructed Flask reference build; runtime validation pending |
-| ShelfWise — Book Shop Management System | [Open case study](02-shelfwise/index.html) | Reconstructed Flask reference build; runtime validation pending |
-| PyroWatch — Fire and Smoke Detection | [Open case study](03-pyrowatch/index.html) | Optional model integration; no weights supplied |
-| Assembly Password Policy Checker | [Open case study](04-assembly-password-checker/index.html) | NASM source; assembly and runtime validation pending |
-| Context-Aware Hate Speech Detection with CNN | [Open case study](05-contextual-hate-speech-cnn/index.html) | Training pipeline; no dataset or trained model supplied |
-| Business Intelligence, AI and Big Data Analytics | [Open case study](06-bi-ai-big-data/index.html) | Awaiting original materials and data |
+## Research and original project work
 
-## Provenance and accuracy
+| Project | Work |
+| --- | --- |
+| [Drone-Based Urban Infrastructure Detection](https://github.com/nabilaislam11/drone-based-urban-infrastructure-detection) | IEEE ICECE 2024 research, original Bangladesh aerial-imagery dataset, model experiments and analysis |
+| [Advanced School Management System](https://github.com/nabilaislam11/advanced-school-management-system) | PHP/Laravel school administration application with source code, database models and academic workflows |
+| [Contextual Hate Speech Detection with CNNs](https://github.com/nabilaislam11/contextual-hate-speech-detection-cnn) | Research paper, methodology, results and supporting documentation |
+| [Contact Book Management System](https://github.com/nabilaislam11/python-contact-book-management-system) | Modular Python contact management with CSV persistence |
 
-The six topics reflect academic projects in which I participated. Where original code, reports, or other evidence could not be recovered, the public repository describes a new reference implementation. Newly written code and features must not be mistaken for the exact historical submission.
+## Software implementations
 
-Each README and case study identifies its technical scope, setup direction, current validation status, and known limitations. No experimental scores, datasets, or research findings are invented.
+These standalone implementations explore related application and programming concepts with their own source code and test suites.
+
+| Project | Technology | Demonstrated features |
+| --- | --- | --- |
+| [ShelfWise — Book Shop Management](02-shelfwise/index.html) | Python, Flask, SQLAlchemy | Catalogue, inventory, sales, invoicing |
+| [PyroWatch — Image Analysis](03-pyrowatch/index.html) | Python, Flask, YOLO adapter | Media workflow and configurable inference integration |
+| [Assembly Password Policy Checker](04-assembly-password-checker/index.html) | NASM, x86-64 Linux | Rule-based password policy checking |
+
+For technical setup and automated checks, follow each implementation's README.

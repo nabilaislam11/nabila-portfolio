@@ -1,6 +1,6 @@
 # Nabila Islam Borno — Academic & Professional Portfolio
 
-**Portfolio website:** [Open the source homepage](index.html)  
+**Portfolio website:** [Explore the website](https://nabilaislam11.github.io/nabila-portfolio/)  
 **GitHub profile:** [nabilaislam11](https://github.com/nabilaislam11)
 
 This repository presents my academic background, published research, selected project work, professional experience, and leadership activities.
@@ -14,7 +14,10 @@ My interests include software engineering, machine learning, computer vision, cl
 ## Explore
 
 - [Portfolio homepage](index.html)
-- [Research publication](https://doi.org/10.1109/ICECE64886.2024.11025116)
+- [IEEE research publication](https://doi.org/10.1109/ICECE64886.2024.11025116)
+- [Drone-based infrastructure detection research repository](https://github.com/nabilaislam11/drone-based-urban-infrastructure-detection)
+- [Laravel school management system](https://github.com/nabilaislam11/advanced-school-management-system)
+- [CNN hate speech detection study](https://github.com/nabilaislam11/contextual-hate-speech-detection-cnn)
 - [Academic project case studies](projects/README.md)
 - [Professional profile](https://www.linkedin.com/in/nabila-islam-borno-6b4873209)
 

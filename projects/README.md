@@ -1,8 +1,6 @@
-# Academic Projects
+# Selected Academic Projects and Thesis Research
 
-The five academic projects and undergraduate thesis on my CV are organized below, with direct access to project source, technical documentation, and research.
-
-## Five academic projects and undergraduate thesis
+Explore project source code, technical documentation, and undergraduate thesis research.
 
 | Project | Academic work and resources |
 | --- | --- |

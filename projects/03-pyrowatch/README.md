@@ -37,3 +37,7 @@ The web application handles analysis records independently of model configuratio
 ## Automated tests
 
 Three GitHub Actions tests cover authentication/dashboard rendering, unsupported-file rejection, and analysis-detail pages. Model inference is activated through the optional adapter and externally configured weights.
+
+## Related academic coursework
+
+The [Advanced Fire and Smoke Detection System](../03-fire-smoke-cse360/README.md) is the original Arduino/CSE360 group project, with its report and source archives. PyroWatch is a separate image-analysis application.

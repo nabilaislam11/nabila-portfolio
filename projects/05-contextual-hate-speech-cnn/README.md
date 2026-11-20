@@ -24,7 +24,7 @@ Python · TensorFlow/Keras · NumPy · Pandas · scikit-learn
 - `requirements.txt` — dependencies
 - `data/README.md` — input format
 
-This pipeline is a separate implementation alongside the academic research publication; paper results are documented in the research repository.
+The [academic research repository](https://github.com/nabilaislam11/contextual-hate-speech-detection-cnn) brings together the final paper, experimental analysis, and a companion CNN training and evaluation pipeline. This portfolio implementation demonstrates a context-column classification workflow.
 
 ## Verification
 

@@ -1,7 +1,4 @@
-"""Context-aware hate-speech CNN baseline.
-CSV schema: text, context, label. No dataset or results are bundled.
-This is a reconstructed reference pipeline, not verified historical code.
-"""
+"""CNN training and evaluation for context-aware text classification."""
 import argparse, json, os, random
 import numpy as np
 import pandas as pd

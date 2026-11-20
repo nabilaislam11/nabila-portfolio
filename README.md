@@ -21,12 +21,12 @@ My interests include software engineering, machine learning, computer vision, cl
 - [Advanced Fire and Smoke Detection — Arduino system](projects/03-fire-smoke-cse360/index.html)
 - [Assembly password checking tool](projects/04-assembly-password-checker/index.html)
 - [CNN hate speech detection study](https://github.com/nabilaislam11/contextual-hate-speech-detection-cnn)
-- [Six academic projects from my CV](projects/README.md)
+- [Academic projects and thesis research](projects/README.md)
 - [Professional profile](https://www.linkedin.com/in/nabila-islam-borno-6b4873209)
 
 ## Academic projects
 
-Explore the [six academic projects from my CV](projects/README.md), including the IEEE drone-imagery research, Laravel school administration, PHP/MySQL bookshop application, Arduino fire-alarm project, assembly password checking, and CNN/NLP research.
+Explore the [academic projects and undergraduate thesis](projects/README.md), including the IEEE drone-imagery research, Laravel school administration, PHP/MySQL bookshop application, Arduino fire-alarm project, assembly password checking, and CNN/NLP research.
 
 ## Run the website locally
 
@@ -40,6 +40,6 @@ Open `http://localhost:8000` and navigate to `index.html`.
 
 ## Contact
 
-- Email: nabila.islam.borno@g.bracu.ac.bd
+- Email: nabilaislam1942@gmail.com
 - LinkedIn: [Nabila Islam Borno](https://www.linkedin.com/in/nabila-islam-borno-6b4873209)
 - GitHub: [nabilaislam11](https://github.com/nabilaislam11)

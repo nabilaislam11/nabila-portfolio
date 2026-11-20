@@ -13,6 +13,10 @@ A browser-based bookshop ordering and delivery management system developed as an
 - Administrative views for products and orders
 - Relational database design for customers, inventory, products, orders, and order items
 
+## Database design
+
+The academic database contains 11 relational tables: `products`, `categories`, `sub_categories`, `inventory`, `clients`, `users`, `cart`, `orders`, `order_list`, `sales`, and `system_info`. Its table definitions and key constraints are available in the local SQL schema.
+
 ## Academic project materials
 
 - [Original PHP application repository](https://github.com/Khandaker-Atik/Book_shop_management)

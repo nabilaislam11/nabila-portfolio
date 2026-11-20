@@ -1,6 +1,6 @@
 # Advanced Book Shop — PHP Source Guide
 
-The CSE370 group project is a PHP/MySQL application with customer shopping pages and administrative workflows. The following links open the original group-project implementation directly.
+The PHP/MySQL bookshop management application with customer shopping pages and administrative workflows. The following links open the original group-project implementation directly.
 
 | Component | PHP source | Role |
 | --- | --- | --- |

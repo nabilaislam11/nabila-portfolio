@@ -1,9 +1,8 @@
 # Advanced Book Shop Management System
 
-**Course project:** CSE370 — Database Systems  
 **Technologies:** PHP, MySQL/MariaDB, HTML, CSS, JavaScript, XAMPP
 
-A browser-based bookshop ordering and delivery management system developed as an academic group project. The application covers customer-facing shopping workflows and an administrative interface for catalogue, inventory, orders, and sales management.
+A browser-based bookshop ordering and delivery management system developed as a collaborative academic project. The application covers customer-facing shopping workflows and an administrative interface for catalogue, inventory, orders, and sales management.
 
 ## System components
 
@@ -17,7 +16,7 @@ A browser-based bookshop ordering and delivery management system developed as an
 
 The academic database contains 11 relational tables: `products`, `categories`, `sub_categories`, `inventory`, `clients`, `users`, `cart`, `orders`, `order_list`, `sales`, and `system_info`. Its table definitions and key constraints are available in the local SQL schema.
 
-## Academic project materials
+## Project materials
 
 - [Original PHP application repository](https://github.com/Khandaker-Atik/Book_shop_management)
 - [Database schema extracted from the academic SQL project](sql/schema.sql)

@@ -1,6 +1,6 @@
 # Manual test plan
 
-Use dummy strings only. Never use a real account password.
+The tests use sample strings to exercise the password rules.
 
 | Scenario | Example | Expected |
 |---|---|---|

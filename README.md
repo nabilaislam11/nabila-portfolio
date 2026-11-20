@@ -17,13 +17,16 @@ My interests include software engineering, machine learning, computer vision, cl
 - [IEEE research publication](https://doi.org/10.1109/ICECE64886.2024.11025116)
 - [Drone-based infrastructure detection research repository](https://github.com/nabilaislam11/drone-based-urban-infrastructure-detection)
 - [Laravel school management system](https://github.com/nabilaislam11/advanced-school-management-system)
+- [Advanced Book Shop Management — PHP/MySQL course project](projects/02-advanced-book-shop/index.html)
+- [Advanced Fire and Smoke Detection — CSE360 project](projects/03-fire-smoke-cse360/index.html)
+- [Assembly password checking tool](projects/04-assembly-password-checker/index.html)
 - [CNN hate speech detection study](https://github.com/nabilaislam11/contextual-hate-speech-detection-cnn)
-- [Academic project case studies](projects/README.md)
+- [Six academic projects from my CV](projects/README.md)
 - [Professional profile](https://www.linkedin.com/in/nabila-islam-borno-6b4873209)
 
 ## Academic projects
 
-Explore my [academic project case studies](projects/README.md), covering software engineering, applied machine learning, and related coursework. Each project page describes its objectives, technologies, and available implementation materials.
+Explore the [six academic projects from my CV](projects/README.md), including the IEEE drone-imagery research, Laravel school administration, PHP/MySQL bookshop application, Arduino fire-alarm coursework, assembly password checking, and CNN/NLP research.
 
 ## Run the website locally
 

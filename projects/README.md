@@ -1,4 +1,4 @@
-# Selected Academic Projects and Thesis Research
+# Academic Projects and Thesis Research
 
 Explore project source code, technical documentation, and undergraduate thesis research.
 

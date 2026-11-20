@@ -22,6 +22,7 @@ The academic database contains 11 relational tables: `products`, `categories`, `
 - [Original PHP application repository](https://github.com/Khandaker-Atik/Book_shop_management)
 - [Database schema extracted from the academic SQL project](sql/schema.sql)
 - [Relational database design and transaction workflows](docs/database-design.md)
+- [Browse the original PHP application components](docs/php-source-guide.md)
 - [Project overview on the portfolio website](index.html)
 
 ## Local development

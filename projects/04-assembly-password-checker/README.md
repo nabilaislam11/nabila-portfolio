@@ -19,7 +19,7 @@ ld password_checker.o -o password_checker
 ./password_checker
 ```
 
-Use sample input rather than real credentials.
+The example uses sample input to demonstrate how the checker evaluates password rules.
 
 ## Tests
 

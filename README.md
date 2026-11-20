@@ -28,15 +28,9 @@ My interests include software engineering, machine learning, computer vision, cl
 
 Explore the [academic projects and undergraduate thesis](projects/README.md), including the IEEE drone-imagery research, Laravel school administration, PHP/MySQL bookshop application, Arduino fire-alarm project, assembly password checking, and CNN/NLP research.
 
-## Run the website locally
+## Website implementation
 
-This is a static site with no build step:
-
-```bash
-python -m http.server 8000
-```
-
-Open `http://localhost:8000` and navigate to `index.html`.
+The portfolio is a static website hosted on GitHub Pages. Its pages are served directly from the repository without a build step.
 
 ## Contact
 

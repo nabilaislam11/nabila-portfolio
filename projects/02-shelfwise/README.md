@@ -33,3 +33,7 @@ Open `http://127.0.0.1:5000`. The application creates its local database tables 
 ## Automated tests
 
 Six GitHub Actions tests cover financial calculations, stock adjustments, invalid sale quantities, and authenticated page rendering. Source and tests are organized under `app/` and `tests/`.
+
+## Related academic coursework
+
+The [Advanced Book Shop Management System](../02-advanced-book-shop/README.md) is the original PHP/MySQL CSE370 group project. ShelfWise is a separate Python/Flask implementation covering bookshop administration and sales concepts.

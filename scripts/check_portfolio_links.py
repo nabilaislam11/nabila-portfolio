@@ -1,6 +1,6 @@
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urlsplit
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,7 +27,7 @@ def inspect(page):
         parsed = urlsplit(reference)
         if parsed.scheme or parsed.netloc:
             continue
-        target_path = (page.parent / parsed.path).resolve() if parsed.path else page.resolve()
+        target_path = (page.parent / unquote(parsed.path)).resolve() if parsed.path else page.resolve()
         try:
             target_path.relative_to(ROOT)
         except ValueError:
@@ -43,7 +43,7 @@ def inspect(page):
                 errors.append(f"{page.relative_to(ROOT)}: missing anchor: {reference}")
     return errors
 
-pages = [ROOT / "index.html"]
+pages = [ROOT / "index.html", ROOT / "projects" / "academic-projects.html"]
 pages.extend(sorted((ROOT / "projects").glob("*/index.html")))
 all_errors = []
 for page in pages:

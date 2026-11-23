@@ -24,6 +24,14 @@ My interests include software engineering, machine learning, computer vision, cl
 - [Academic projects and thesis research](projects/README.md)
 - [Professional profile](https://www.linkedin.com/in/nabila-islam-borno-6b4873209)
 
+## Professional infrastructure & DevOps projects
+
+My professional engineering work includes enterprise Linux operations, infrastructure monitoring, application deployment verification, security administration, and patch change management. These repositories organize practical tooling and technical documentation across those disciplines.
+
+- [Platform Infrastructure & DevOps Engineering](https://github.com/nabilaislam11/platform-infrastructure-devops) — Linux operations, deployment verification, troubleshooting, change management, and engineering runbooks.
+- [Linux Observability Monitoring Stack](https://github.com/nabilaislam11/linux-observability-monitoring-stack) — Prometheus, Grafana, Alertmanager, Node Exporter, and containerized monitoring configuration.
+- [Linux Server Hardening & Automation](https://github.com/nabilaislam11/linux-server-hardening-automation) — host auditing, SSH assessment, account lifecycle checks, and patch readiness.
+
 ## Academic projects
 
 Explore the [academic projects and undergraduate thesis](projects/README.md), including the IEEE drone-imagery research, Laravel school administration, PHP/MySQL bookshop application, Arduino fire-alarm project, assembly password checking, and CNN/NLP research.
